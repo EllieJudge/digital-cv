@@ -1,0 +1,32 @@
+@keyframes firstAnimation {
+
+    0% {background-color: red;}
+    25% {background-color: hotpink}
+    50% {background-color: aqua}
+    75% {background-color: violet}
+    100% {background-color: palegreen}
+}
+
+h1 {
+    position: relative;
+}
+
+.square {
+    position: relative;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    transition: 2s;
+    animation-name: firstAnimation; /*<< this calls the animation you want to use*/
+    animation-duration: 50s; /*<< how long u want it to run for */
+    top: 50%;
+    position: static;
+    /* position: relative; */
+    /* justify-content: center; */
+    /* align-content: center; */
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
